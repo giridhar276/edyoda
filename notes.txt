@@ -1,0 +1,155 @@
+**** Everything in Python is OBJECT ****
+**** Every object contains methods *****
+
+number
+-------
+number can be integer or decimal or octal or hexa.
+
+aval = 10
+bval = 67.6
+
+
+string  ( immutable , unchangable , read only)
+------
+string can be defined in single or double or triple quotes.
+****** Characters inside the string cant be modified directly ****
+
+aname = 'python programming'
+bname = "scala programming"
+cname = """java coding"""
+
+
+list ( array in C )
+-----
+list contains set of elements.
+Elements can be set of numbers or strings or any combination.
+list elements are defined in [].
+
+alist = [10,20,30]
+blist = ["python","java"]
+clist = [45,34.44,"java"]
+
+
+
+tuple  ( read only , unchangable , immutable )
+------
+tuple contains set of elements.
+Elements can be set of numbers or strings or any combination.
+tuple elements are defined in ().
+**** Elements inside tuple CANNOT be modified directly****
+
+atup = (5,5,43,4)
+btup = ("java","c","54",5,45.4)
+
+
+dictionary
+--------
+dictionary contains elements in the form of keys:values 
+In dictionary,
+    keys are strings or numbers which are used to uniquely identify the value
+    values can be number or string or list or tuple or dictionary or some complex datastructure.
+
+syntax:   object = {key:value , key:value .... }
+example:    book = {"chap1":10 ,"chap2":20,"chap3":30}
+            info = {1:2,3:4,5:6}
+            book = {"chap1":[10,"Rita","US"] ,"chap2":[20,"Gita","IND"] }
+            book = {"chap1":10 ,"chap2":20,"chap3":30 ,"chap1":100}
+
+set
+--------
+set is UNORDERED collection of UNIQUE elements of SAME TYPE.
+
+aset = {10,10,20,30}
+
+
+
+mutablity and immutability
+------------------------------
+
+
+immutable objects ( unchangable , read only )
+-----------------
+string
+tuple
+number
+
+mutable objects
+-------------------
+list
+dictionary
+set
+
+
+
+
+functions
+------------
+
+- builtin functions
+- user defined functions
+
+
+- builtin functions
+----------------------
+print()
+len()
+dir()
+help()
+range()
+input()
+sum()
+max()
+min()
+type()
+isinstance()
+
+
+typcasting functions ( coversion functions)
+list()
+tuple()
+str()
+int()
+set()
+dict()
+float()
+oct()
+hex()
+
+
+How to display all the list of builtin functions ?
+
+In the console
+
+dir(__builtins__)   # functions and exceptions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
