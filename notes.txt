@@ -126,6 +126,255 @@ dir(__builtins__)   # functions and exceptions
 
 
 
+operators
+--------------
+
+
+
+arithmetic operators : + - * % /
+----------------------
+
+assignment operators : ( ++ and -- are NOT allowed in python )
+---------------------
+a = 10
+
+
+a+=1   or a = a + 1
+a-=1   or a = a - 1
+a*=1   or a = a * 1
+
+
+relational operators
+---------------------
+< <= > >= == !=
+
+
+logical operators
+--------------------
+and 
+or 
+not
+
+name = "python"
+if  name.isupper()   or len(name) == 6 :
+    # your logic
+
+
+if  name.isupper()   and  len(name) == 6 :
+    # your logic
+
+
+
+special operators
+---------------
+in
+
+name = 'python'
+if 'p' in name:
+    print('true')
+
+
+as
+
+
++
+--
+output = 3 + 3
+out    = 'python  + "programming"
+
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+working with flat files ( csv conf log prop txt rtf ..... )
+----------------------------------------------------
+
+
+opening the file
+----------------
+syntax :    object = open(filename,mode)
+example:      fobj = open("customers.txt","r")   -----> read mode
+              fobj = open("customers.txt","w")   ------> write mode
+              fobj = open("customers.txt","a")    -----> append mode
+
+
+
+closing the file
+---------------
+object.close()
+
+
+different ways of reading the file
+---------------------------------
+
+-> reading the file line by line ( usinf file object)
+-> using fobj.readlines()   ---------------------------> output will be displayed in list
+-> using fobj.read()        ---------------------------> output will be displayed in string format
+-> using fobj.readline()    ---------------------------> reading line by line
+-> using pandas library
+
+
+
+
+
+working with third party files ( pdf doc ppt zip rar .... )
+we require some third party tool to open/create the file
+
+
+
+
+
+
+
+
+
+
+library | module | package
+--------------------------
+Every library contains set of methods
+
+
+builtin library  ( 4000+ libraries are installed with python )
+-----------------
+All the libraries are installed with python which are commonly used( mathematical operations, file operations
+ftp , mail operations, working with time and datetime) by everyone
+
+
+third party library
+--------------------
+Depending on the requirement( cloud automation, testing, networking , ssh , ML,DL,analytics, database, imageprocess )
+, developer has to install the third party library from
+
+- www.pypi.org    ( installed manually )
+- using pip tool
+- using easy_install tool
+- using conda tool ( available with anaconda software)
+
+
+
+
+
+
+
+exception handling
+--------------------
+
+syntax error
+
+semantic error or runtime error or logical error
+
+
+handling the errors in the runtime is known as exception handling.
+
+
+try
+except
+else
+finally
+raise
+
+
+
+library re
+-----------
+
+- search   ( anywhere in the string)
+- sub      ( replacing)
+- match    ( to match only at the beginning of the string)
+- findall  ( to find all the patterns)
+- purge    ( flush out all existing re matches)
+
+
+metacharacters or wildcard characters
+-----------------------------------------
+
+^  : to match at the beginning of the string
+     re.search("^python",line):
+
+
+$  : to match at the end of the string
+     if re.search("python$",line)
+
+
+*  : zero or more occurences of preceding character
+     if re.search("pyt*hon",line):
+
++  : one or more occurences of preceding character
+     if re.search("pyt+hon",line):
+
+.  : any single character or digit
+     if re.search(".ython",line):
+
+
+?  : either zero or one occurence o preceding character
+     if re.search("pyt?hon",line):
+
+[]  : character class
+     if re.search("[pqmj1]ython",line):
+
+
+( | )  :  (python|perl)
+
+{}   :  {min,max} occurence of preceding character
+        if re.search("pyt{1,10}hon",line): 
+
+\w   : word boundary
+\s   : white spaces
+
+
+user defined functions | definition | submodule | block
+-------------------------------------------------------
+- reusability purpose
+- define the block once and call it for multiple times
+
+
+different ways of passing arguments
+---------------------------------------
+
+- fixed arguments
+- default arguments
+- keyword arguments
+- variable lengh arguments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
